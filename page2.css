@@ -1,0 +1,24 @@
+#parentbox {
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  width: 600px;
+  background: rgb(185, 219, 186);
+}
+
+#box-1 {
+  -moz-box-flex: 1;
+  background: rgb(223, 13, 208);
+}
+
+#box-2 {
+  -moz-box-flex: 1;
+  background: rgb(141, 233, 20);
+}
+#box-3 {
+  -moz-box-flex: 1;
+  background: rgb(151, 95, 154);
+}
+#box-4 {
+  -moz-box-flex: 1;
+  background: rgb(230, 156, 78);
+}
