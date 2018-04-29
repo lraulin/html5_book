@@ -20,9 +20,10 @@
       alert('another click!')
     }
     function clickme() {
-      document.getElementsByTagName('p')[0].onclick = showalert;
+      var pelement = document.getElementsByTagName('p')[0];
+      document.addEventListener('click', showalert, false);
     }
-    window.onload = clickme;
+    window.addEventListener('load', clickme, false);
   </script>
 
 </body>

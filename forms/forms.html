@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="forms.css" />
+  <script src="forms.js"></script>
+  <script>
+    unction initiate() {
+      name1 = document.getElementById("firstname");
+      name2 = document.getElementById("lastname");
+      name1.addEventListener("input", validation, false);
+      name2.addEventListener("input", validation, false);
+      validation();
+    }
+    function validation() {
+      if (name1.value == '' && name2 == '') {
+        name1.setCustomValidity('insert at least one name');
+        name1.style.background = '#ffdddd';
+      } else {
+        name1.setCustomValidity('');
+        name1.style.background = '#ffffff';
+      }
+    }
+    window.addEventListener("load", initiate, false);
+  </script>
+</head>
+
+<body>
+  <section id="form">
+    <form name="myform" method="get" id="myform"> First Name:
+      <input type="text" name="firstname" id="firstname"> Last Name:
+      <input type="text" name="lastname" id="lastname">
+      <input type="email" name="myemail" id="myemai">
+      <input type="search" name="mysearch" id="mysearch">
+      <input type="url" name="myurl" id="myurl">
+      <input type="range" name="myrange" id="myrange" min="0" max="100">
+      <input type="week" name="myweek" id="myweek">
+      <input type="month" name="mymonth" id="mymonth">
+      <input type="time" name="mytime" id="mytime">
+      <input type="datetime" name="mydatetime" id="mydatetime">
+      <input type="color" name="mycolor" id="mycolor">
+      <input type="submit" value="send">
+    </form>
+  </section>
+  <section id="canvas_box">
+    <canvas width="500" height="300" id="canvas">
+      Your browser does not support canvas
+    </canvas>
+  </section>
+
+</body>
+
+</html>
