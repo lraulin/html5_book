@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New CSS3 Styles</title>
+  <link rel="stylesheet" href="page3.css">
+</head>
+
+<body>
+  <header id="mainbox">
+    <span id="title">CSS Styles Web 2.0</span>
+  </header>
+  <button onclick="alert('Click!')">Click Me</button>
+  <p>words</p>
+  <script>
+    function showalert() {
+      alert('another click!')
+    }
+    function clickme() {
+      document.getElementsByTagName('p')[0].onclick = showalert;
+    }
+    window.onload = clickme;
+  </script>
+
+</body>
+
+</html>
