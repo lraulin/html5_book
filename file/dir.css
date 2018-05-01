@@ -1,0 +1,19 @@
+#formbox{
+  float:left;
+  padding: 20px;
+  border: 1 px solid #999999
+}
+
+#databox{
+  float: left;
+  width: 500px;
+  margin-left: 20px;
+  padding: 20px;
+  border: 1p solid #999999;
+}
+
+.directory{
+  color: #0000ff;
+  font-weight: bold;
+  cursor: pointer;
+}

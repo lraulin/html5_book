@@ -1,0 +1,26 @@
+#form_box{
+  float: left;
+  padding: 20px;
+  border: 1px solid #999999;
+}
+
+#data_box{
+  float: left;
+  width: 400px;
+  margin-left: 20px;
+  padding: 20px;
+  border: 1px solide #999999;
+}
+
+#keyword: #text{
+  width: 200px;
+}
+
+#keyword, #text{
+  widows: 200px;
+}
+
+#data_box > div{
+  padding: 5px;
+  border-bottom: 1px solid #999999;
+}
